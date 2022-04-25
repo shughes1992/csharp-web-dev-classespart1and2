@@ -5,11 +5,11 @@ using System.Text;
 
 namespace SchoolPractice
 {
-    public class Course
+    internal class Course
 
 
     {
-        public string CourseName { get; set; }
+        public string Name { get; set; }
 
         public string ProfessorName { get; set; }
 
@@ -17,13 +17,11 @@ namespace SchoolPractice
 
 
 
-
-
 //constructor ! NEEDED , if not created- it will be an empty one
 
         public Course(string name, string professorName, List<Student> studentRoster )
         {
-            CourseName = CourseName;
+            Name = name;
             ProfessorName = professorName;
             StudentRoster = studentRoster;
         }
